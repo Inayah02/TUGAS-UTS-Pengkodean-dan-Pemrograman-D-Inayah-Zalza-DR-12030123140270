@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Laba Rugi</title>
+    <style>
+        body {
+            font-family: Cormorant Garamond;
+            background: linear-gradient(135deg, #e9dcd6, #ca99ab);
+            color: #893a49;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4c1208;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: linear-gradient(135deg, #664242, #af8382);
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .total {
+            font-weight: bold;
+            background: #d0bcb1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #746770;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Laporan Laba Rugi</h1>
+    <h2 style="text-align: center; color: #762e3f;">Per 31 Desember 2023</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Keterangan</th>
+                <th>Jumlah (Rp)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pendapatan Usaha</td>
+                <td>150.000.000</td>
+            </tr>
+            <tr>
+                <td>Beban Pokok Penjualan</td>
+                <td>(80.000.000)</td>
+            </tr>
+            <tr class="total">
+                <td><strong>Laba Kotor</strong></td>
+                <td><strong>70.000.000</strong></td>
+            </tr>
+            <tr>
+                <td>Beban Operasional</td>
+                <td>(20.000.000)</td>
+            </tr>
+            <tr>
+                <td>Beban Lain-lain</td>
+                <td>(5.000.000)</td>
+            </tr>
+            <tr class="total">
+                <td><strong>Laba Bersih</strong></td>
+                <td><strong>45.000.000</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Dibuat oleh: Tim Keuangan LUINE</p>
+        <p>© 2023 LUINE.id. All rights reserved.</p>
+        <p style="text-align: center; color: #b99099;">@inayahzdr</p>
+    </div>
+
+</body>
+</html>
