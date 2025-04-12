@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan & Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan Logo -->
+        <header class="app-header">
+            <img src="images/moon.png" alt="Logo Bulan Sabit" class="logo">
+            <h1>Manajemen Persediaan & Penjualan</h1>
+        </header>
+
+        <!-- Form Tambah Produk -->
+        <section class="form-section">
+            <h2>Tambah Produk</h2>
+            <input type="text" id="product-name" placeholder="Nama Produk">
+            <input type="number" id="product-price" placeholder="Harga (Rp)">
+            <input type="number" id="product-stock" placeholder="Jumlah Stok">
+            <input type="file" id="product-image" accept="image/*">
+            <button onclick="addProduct()">Tambah Produk</button>
+        </section>
+
+        <!-- Daftar Produk -->
+        <section class="stock-section">
+            <h2>Daftar Produk</h2>
+            <div id="product-list" class="product-list"></div>
+        </section>
+
+        <!-- Total Pendapatan -->
+        <section class="sales-summary">
+            <h2>Total Pendapatan: Rp <span id="total-sales">0</span></h2>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

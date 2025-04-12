@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Header dengan Logo */
+.app-header {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Pusatkan elemen */
+    color: black;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px; /* Atur ukuran logo */
+    height: auto;
+    margin-bottom: 10px; /* Beri jarak antara logo dan teks */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+.form-section, .stock-section, .sales-summary {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.sell-btn {
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+.sell-btn:hover {
+    background-color: #0056b3;
+}
